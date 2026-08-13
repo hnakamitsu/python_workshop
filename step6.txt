@@ -1,3 +1,5 @@
-# 指定した範囲からランダムに1単語選ぶ
-word_number = random.randint(start, end - 1)
-today_word = words[word_number]
+# 結果を表示する
+print()
+print("🎯 今日覚える英単語")
+print("--------------------")
+print("英単語:", today_word)
