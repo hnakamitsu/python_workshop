@@ -1,11 +1,15 @@
-# 1行目は見出しなので、2行目から繰り返す
-for line_data in csv_lines[1:]:
+# 目標点数に応じて、単語を選ぶ範囲を決める
+if score < 500:
+    start = 0
+    end = 800
+elif score < 700:
+    start = 800
+    end = 1600
+elif score < 850:
+    start = 1600
+    end = 2300
+else:
+    start = 2300
+    end = len(words)
 
-    # 1行分のデータをカンマで分ける
-    line_items = line_data.split(",")
-
-    # 最初の項目が英単語
-    word = line_items[0]
-
-    # 英単語をリストに追加する
-    words.append(word)
+# print(start, end)
