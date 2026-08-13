@@ -1,7 +1,7 @@
 # 今後必要な機能をロードする
 import random
 import requests
- 
+
 # 目標点数を文字として受け取る
 score_text = input("目標のTOEIC点数: ")
 
@@ -9,4 +9,4 @@ score_text = input("目標のTOEIC点数: ")
 score = int(score_text)
 
 # ↓このコメントを外すとデータが表示されます
-# print(score)​
+# print(score)
